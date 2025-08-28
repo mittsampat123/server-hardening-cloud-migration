@@ -103,7 +103,6 @@ server-hardening-cloud-migration/
 
 1. **Group Policy Configuration**
    ```powershell
-   # Security Policy Settings
    - Password complexity requirements
    - Account lockout policies
    - Audit policy configuration
@@ -112,7 +111,6 @@ server-hardening-cloud-migration/
 
 2. **Service Optimization**
    ```powershell
-   # Disable unnecessary services
    - Telnet Server
    - TFTP Client
    - Print Spooler (if not needed)
@@ -121,7 +119,6 @@ server-hardening-cloud-migration/
 
 3. **Registry Hardening**
    ```powershell
-   # Security registry modifications
    - Disable LM hash storage
    - Configure session security
    - Enable secure channel settings
@@ -131,7 +128,6 @@ server-hardening-cloud-migration/
 
 1. **System Hardening**
    ```bash
-   # Kernel parameter optimization
    - Disable core dumps
    - Configure memory protection
    - Enable address space randomization
@@ -139,7 +135,6 @@ server-hardening-cloud-migration/
 
 2. **Service Hardening**
    ```bash
-   # Disable unnecessary services
    - rsh, rlogin, rexec
    - telnet, ftp
    - xinetd services
@@ -147,7 +142,6 @@ server-hardening-cloud-migration/
 
 3. **Network Hardening**
    ```bash
-   # TCP/IP stack hardening
    - Disable IP forwarding
    - Configure SYN cookies
    - Enable reverse path filtering
@@ -159,7 +153,6 @@ server-hardening-cloud-migration/
 
 1. **Infrastructure as Code**
    ```hcl
-   # Terraform configuration
    resource "aws_instance" "web_server" {
      ami           = "ami-12345678"
      instance_type = "t3.medium"
@@ -280,13 +273,11 @@ server-hardening-cloud-migration/
 
 1. **Windows Server Hardening**
    ```powershell
-   # Execute hardening script
    .\windows_hardening.ps1 -ServerType Web -ComplianceLevel High
    ```
 
 2. **Linux Server Hardening**
    ```bash
-   # Execute Ansible playbook
    ansible-playbook -i inventory.yml hardening_playbook.yml
    ```
 
@@ -299,7 +290,6 @@ server-hardening-cloud-migration/
 
 1. **Infrastructure Provisioning**
    ```bash
-   # Deploy infrastructure
    terraform init
    terraform plan
    terraform apply
@@ -336,7 +326,6 @@ server-hardening-cloud-migration/
 ### Performance Monitoring
 
 ```yaml
-# Prometheus configuration
 global:
   scrape_interval: 15s
 
